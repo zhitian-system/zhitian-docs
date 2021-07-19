@@ -29,16 +29,24 @@ npm install --registry=http://39.98.250.155:17021/ @ztc/cli -g
 
 ## 用户登录
 
-通过 `ztc login` 命令登录知天开发者控制台（Mac 在 terminal 中执行，Windows 在 cmd 中执行），执行后，需要输入以下信息。
+首先您需要登陆知天平台，才可以开发和发布组件。
+
+### UI 界面登陆
+
+您可以在调试面板的界面中进行登陆。
+
+### 命令行登陆
+
+通过 `ztc login` 命令登录知天开发者控制台（Mac 在 terminal 中执行，Windows 在 cmd 或者 powershell 中执行），执行后，需要输入以下信息。
 
 | 组件库信息 | 说明               |
 | ---------- | ------------------ |
 | username   | 在知天平台的用户名 |
 | password   | 在知天平台的密码   |
 
-## 生成组件库
+## 生成组件库项目脚手架
 
-通过 `ztc init [project name]` 命令生成组件库（Mac 在 terminal 中执行，Windows 在 cmd 中执行），执行后，需要输入以下组件信息。
+通过 `ztc init [project name]` 命令生成组件库（Mac 在 terminal 中执行，Windows 在 cmd 或者 powershell 中执行），执行后，需要输入以下组件信息。
 
 | 组件库信息          | 说明                               |
 | ------------------- | ---------------------------------- |
@@ -49,7 +57,7 @@ npm install --registry=http://39.98.250.155:17021/ @ztc/cli -g
 
 ## 创建组件
 
-通过 `ztc create` 命令创建组件（Mac 在 terminal 中执行，Windows 在 cmd 中执行），执行后，需要输入以下组件信息。
+通过 `ztc create` 命令创建组件（Mac 在 terminal 中执行，Windows 在 cmd 或者 powershell 中执行），执行后，需要输入以下组件信息。
 
 | 组件信息       | 说明                                 |
 | -------------- | ------------------------------------ |
@@ -58,10 +66,9 @@ npm install --registry=http://39.98.250.155:17021/ @ztc/cli -g
 
 ## 预览调试组件
 
-您可以通过以下命令预览组件（Mac 在 terminal 中执行，Windows 在 cmd 中执行）。
+您可以通过以下命令预览组件（Mac 在 terminal 中执行，Windows 在 cmd 或者 powershell 中执行）。
 
 ```bash
-cd 您的组件名
 yarn dev
 ```
 
